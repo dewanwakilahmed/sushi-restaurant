@@ -17,7 +17,7 @@
   /* Font families */
   --body-font: 'Poppins', sans-serif;
   --title-font: 'Lora', serif;
-  --subtitle-font: 'Dacing Script', cursive;
+  --subtitle-font: 'Dancing Script', cursive;
 
   /* Font sizes */
   --biggest-font-size: 2.25rem;
@@ -58,7 +58,7 @@
 }
 
 html {
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -141,7 +141,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: box-shadow 0.3s background 0.4s;
+  transition: box-shadow 0.3s, background 0.4s;
 }
 
 .nav {
