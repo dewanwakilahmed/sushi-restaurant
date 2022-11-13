@@ -28,7 +28,18 @@ navLinks.forEach((link) => {
   link.addEventListener('click', linkAction);
 });
 
-// CHANGE HEADER BACKGROUND
+// CHANGE BACKGROUND HEADER
+const scrollHeader = () => {
+  const header = document.getElementById('header');
+
+  // When the scroll is greater than or equal to
+  //   50 viewport height, add the scroll-header class to the header tag
+  this.scrollY >= 50
+    ? header.classList.add('bg-header')
+    : header.classList.remove('bg-header');
+};
+
+window.addEventListener('scroll', scrollHeader);
 
 // SHOW SCROLL UP
 
