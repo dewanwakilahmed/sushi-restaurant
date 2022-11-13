@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- MAIN JS -->
+    <script src="./main.js" defer></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+
+    <title>Sushi Restaurant | DWA</title>
+
     <!-- FAVICON -->
     <link rel="shortcut icon" href="" type="image/x-icon" />
 
@@ -17,95 +25,134 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- MAIN JS -->
-    <script src="./main.js" defer></script>
-
-    <!-- SCROLL REVEAL -->
-    <script src="https://unpkg.com/scrollreveal" defer></script>
-
-    <title>Sushi Restaurant | DWA</title>
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img src="./assets/img/logo.png" alt="logo image" />
-          <span>Sushi</span>
-        </a>
+    <div class="main-website">
+      <!-- HEADER -->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">
+            <img src="./assets/img/logo.png" alt="logo image" />
+            <span>Sushi</span>
+          </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
-            </li>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
 
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About us</a>
-            </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About us</a>
+              </li>
 
-            <li class="nav__item">
-              <a href="#popular" class="nav__link">Popular</a>
-            </li>
+              <li class="nav__item">
+                <a href="#popular" class="nav__link">Popular</a>
+              </li>
 
-            <li class="nav__item">
-              <a href="#recently" class="nav__link">Recently</a>
-            </li>
-          </ul>
+              <li class="nav__item">
+                <a href="#recently" class="nav__link">Recently</a>
+              </li>
+            </ul>
 
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
+
+            <img
+              src="./assets/img/leaf-branch-4.png"
+              alt="nav image"
+              class="nav__img-1"
+            />
+            <img
+              src="./assets/img/leaf-branch-3.png"
+              alt="nav image"
+              class="nav__img-2"
+            />
           </div>
+
+          <div class="nav__buttons">
+            <!-- Theme change button -->
+            <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-apps-2-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main">
+        <!-- HOME SECTION -->
+        <section class="home section" id="home">
+          <div class="home__container container grid">
+            <img
+              src="./assets/img/home-sushi-rolls.png"
+              alt="home image"
+              class="home__img"
+            />
+
+            <div class="home__data">
+              <h1 class="home__title">
+                <span>Enjoy Delicious</span>
+
+                <div>
+                  <img
+                    src="./assets/img/home-sushi-title.png"
+                    alt="home image"
+                  />
+
+                  <span>Sushi Food</span>
+                </div>
+              </h1>
+
+              <p class="home__description">
+                Enjoy a good dinner with the best dishes in the restaurant and
+                improve your day.
+              </p>
+
+              <a href="#" class="button">
+                <i class="ri-arrow-right-line"></i>
+                <span>Order now</span>
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./assets/img/leaf-branch-2.png"
+            alt="home image"
+            class="home__leaf-1"
+          />
 
           <img
             src="./assets/img/leaf-branch-4.png"
-            alt="nav image"
-            class="nav__img-1"
+            alt="home image"
+            class="home__leaf-2"
           />
-          <img
-            src="./assets/img/leaf-branch-3.png"
-            alt="nav image"
-            class="nav__img-2"
-          />
-        </div>
+        </section>
 
-        <div class="nav__buttons">
-          <!-- Theme change button -->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about"></section>
 
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-apps-2-line"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+        <!-- POPULAR SECTION -->
+        <section class="popular section" id="popular"></section>
 
-    <!-- MAIN -->
-    <main class="main">
-      <!-- HOME SECTION -->
-      <section class="home section" id="home"></section>
+        <!-- RECENTLY SECTION -->
+        <section class="recently section" id="recently"></section>
 
-      <!-- ABOUT SECTION -->
-      <section class="about section" id="about"></section>
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about"></section>
 
-      <!-- POPULAR SECTION -->
-      <section class="popular section" id="popular"></section>
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter section"></section>
+      </main>
 
-      <!-- RECENTLY SECTION -->
-      <section class="recently section" id="recently"></section>
-
-      <!-- ABOUT SECTION -->
-      <section class="about section" id="about"></section>
-
-      <!-- NEWSLETTER SECTION -->
-      <section class="newsletter section"></section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer"></footer>
+      <!-- FOOTER -->
+      <footer class="footer"></footer>
+    </div>
   </body>
 </html>
